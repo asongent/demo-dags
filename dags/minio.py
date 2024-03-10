@@ -3,10 +3,10 @@ from pyspark.sql import SparkSession
 from pyspark import SparkContext
 from pyspark.sql.types import *
 
-spark = SparkSession.builder.appName("MINIO s3") \
+spark = SparkSession.builder.appName("minio psql s3") \
     .config("spark.hadoop.fs.s3a.endpoint", "http://minio.minio.svc.cluster.local:9000") \
-    .config("spark.hadoop.fs.s3a.access.key", "vBhaslrnnZwwJ0GKqAMo") \
-    .config("spark.hadoop.fs.s3a.secret.key", "xDQy1VPgKpzBEG1SdWAUZeOzXclXBcPklP0DKbJ3") \
+    .config("spark.hadoop.fs.s3a.access.key", "ZgdMTpNQ1k211Kdk8Gsd") \
+    .config("spark.hadoop.fs.s3a.secret.key", "0SJfUbSjv5cHNjx1lZSLy0387yGbBLcsUfzhYqJJ") \
     .config("spark.hadoop.fs.s3a.path.style.access", "true") \
     .config("spark.hadoop.fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem") \
     .getOrCreate()

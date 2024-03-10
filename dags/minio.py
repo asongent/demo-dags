@@ -22,7 +22,7 @@ def main():
     jdbc_url = "jdbc:postgresql://postgresql.postgresql.svc.cluster.local:5432/spark_db"
     properties = {
         "user": "postgres",
-        "password": "postgrespassword",
+        "password": "postgresPassword",
         "driver": "org.postgresql.Driver"
     }
     # Write the aggregated result to PostgreSQL
